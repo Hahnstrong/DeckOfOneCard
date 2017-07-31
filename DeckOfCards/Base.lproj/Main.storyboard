@@ -6,6 +6,46 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tx4-ht-gqE">
+            <objects>
+                <viewController id="GBx-Yg-Bk8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ahG-Lm-5ou"/>
+                        <viewControllerLayoutGuide type="bottom" id="cTL-6k-EM4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gA9-MQ-zGH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSV-Ue-XwC">
+                                <rect key="frame" x="133.5" y="28" width="107" height="30"/>
+                                <state key="normal" title="Draw New Card"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zCg-Lq-SLd">
+                                <rect key="frame" x="37" y="66" width="300" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zCg-Lq-SLd" secondAttribute="height" multiplier="2:3" id="4b7-N9-wzp"/>
+                                    <constraint firstAttribute="width" constant="300" id="ckJ-3E-Am5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fSV-Ue-XwC" firstAttribute="centerX" secondItem="gA9-MQ-zGH" secondAttribute="centerX" id="1Zc-TW-UGP"/>
+                            <constraint firstItem="zCg-Lq-SLd" firstAttribute="top" secondItem="fSV-Ue-XwC" secondAttribute="bottom" constant="8" id="Gov-tt-uVX"/>
+                            <constraint firstItem="zCg-Lq-SLd" firstAttribute="centerX" secondItem="gA9-MQ-zGH" secondAttribute="centerX" id="fWt-Uc-f3q"/>
+                            <constraint firstItem="fSV-Ue-XwC" firstAttribute="top" secondItem="ahG-Lm-5ou" secondAttribute="bottom" constant="8" id="j0e-f2-QwI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3a-eb-FCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="138"/>
+        </scene>
+    </scenes>
 </document>
